@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Website</title>
+    <!--tailwind css cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+        <!-- google fonts cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="sticky top-0 bg-white border-b-2 border-green-500 ">
+        <nav class="flex tex-center bg-green-100 m-0 lg:px-5 lg:py-5">
+        
+        <div class=""><button class="bg-green-500 py-3 px-5 rounded font-bold hover:bg-green-400 "><a href="dom.html">Blog</a> </button></div>
+        <div class="flex flex-1 justify-center items-center"><img src="assets/logo.png" alt=""><span class="text-2xl lg: text-3xl font-bold ">Donate Bangladesh</span></div>
+        <div class="flex text-center items-center"><img src="assets/coin.png" alt=""><span class="texl-2xl font-bold" id="remain-amount"> 5500 BDT</span></div>
+        
+        </nav>
+        <div class="text-center items-center px-5 py-5">
+            
+            <button class="bg-green-500 text-white rounded-lg py-3 px-7 font-bold mx-5 border-2 border-green-500" id="search-btn">Search</button> 
+            <button class="font-bold text-green-500 mx-5 py-3 px-7 rounded-lg border-green-500 border-2 active:bg-green-500 bg-white"  id="history-btn">History</button>
+        </div>
+    </div>
+
+    <div id="donate-section"><div class="border-lg shadow-xl grid grid-cols-1 lg:grid-cols-2 m-0 lg:m-10 gap-10 rounded-lg m-5 lg:mx-40 border-2 items-center" id="noakhali-flood-relief">
+      <div class=""><img src="assets/noakhali.png" alt="" class="rounded-lg m-10"></div>
+      <div class="m-5 lg:m-10"> 
+        <button class="flex bg-gray-300 rounded px-3 py-2 text-center"><img src="assets/coin.png" alt=""><span id="noakhali-total"></span></button>
+      <h1 class="font-bold text-xl lg:text-xl">Donate for flood at Noakhali,Bangladesh</h1>
+      <p class="text-gray-600 ">The recent flood in Bangladesh caused a significant damage to homes infrustracture. Your donation will help provide essential and to those affected by this disaster. Every contribution big and small, makes difference. Please join us the relief efforts and making a positive impact on the lives of those in those need.</p>
+        <div><input type="number" class="rounded-lg my-5 lg:px-7 lg:py-3 border-2 " placeholder="Amount of donation" id="donate-noakhali"></div>
+      
+
+      <div><button class="bg-green-500 rounded text-xl lg:text-3xl lg:px-7 lg:py-3 font-bold text-white hover:bg-green-400" id="donate-btn">Donate Now</button></div>
+      
+      
+      </div>
+    
+  </div>
+  
+
+
+  <div class="border-lg shadow-xl grid grid-cols-1 lg:grid-cols-2 m-0 lg:m-10 gap-10 rounded-lg m-5 lg:mx-40 border-2 items-center" id="feni-flood-relief">
+    <div class=""><img src="assets/feni.png" alt="" class="rounded-lg m-10"></div>
+    <div class="m-5 lg:m-10"> 
+      <button class="flex bg-gray-300 rounded px-3 py-2 text-center" id><img src="assets/coin.png" alt=""><span id="feni-total">0 BDT</span> </button>
+    <h1 class="font-bold text-xl lg:text-xl">Donate for flood relief at feni,Bangladesh</h1>
+    <p class="text-gray-600 ">
+      The recent flood in feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every conctribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+      <div><input type="number" class="rounded-lg my-5 lg:px-7 lg:py-3 border-2" placeholder="The amount of donation" id="donate-feni"></div>
+    
+
+    <div><button class="bg-green-500 rounded text-xl lg:text-3xl lg:px-7 lg:py-3 font-bold text-white hover:bg-green-400">Donate Now</button></div>
+    
+    
+    </div>
+  
+</div>
+
+
+<div class="border-lg shadow-xl grid grid-cols-1 lg:grid-cols-2 m-0 lg:m-10 gap-10 rounded-lg m-5 lg:mx-40 border-2 items-center" id="qouta-movement">
+  <div class=""><img src="assets/quota-protest.png" alt="" class="rounded-lg m-10"></div>
+  <div class="m-5 lg:m-10"> 
+    <button class="flex bg-gray-300 rounded px-3 py-2 text-center"><img src="assets/coin.png" alt="">0 BDT</button>
+  <h1 class="font-bold text-xl lg:text-xl">Aid for injured in Qouta Movement, BD</h1>
+  <p class="text-gray-600 ">
+    The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenged time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a suffering and aiding in their recovery. please consider making a donation to support these brave individuals in their time of need.</p>
+    <div><input type="number" class="rounded-lg my-5 lg:px-7 lg:py-3 border-2 " placeholder="The amount of donation" id="donate-qouta-m"></div>
+  
+
+  <div><button class="bg-green-500 rounded text-xl lg:text-3xl lg:px-7 lg:py-3 font-bold text-white hover:bg-green-400 " id="donate-btn">Donate Now</button></div>
+  
+  
+  </div>
+
+</div></div>
+    
+
+
+  <div id="history-section">
+    <h1 class="text-center text-3xl font-bold">History of donation</h1>
+    <div id="history-container"></div>
+  </div>
+  
+
+ <script src="js/utilities.js"></script>
+<script src="js/donate.js"></script>
+<script src="js/feni.js"></script>
+<script src="Amount-substraction.js"></script>
+</body>
+</html>
+
+
+
+
+

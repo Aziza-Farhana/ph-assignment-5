@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom defination Page</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+
+    <div class="faq-section">
+        <h1>Important FAQ?</h1>
+        
+        <div class="faq-item">
+            <h2 class="faq-question">What is DOM?</h2>
+            <p class="faq-answer">"DOM" typically refers to the Document Object Model, which is a programming interface used to represent and manipulate HTML and XML documents. It provides a structured representation of the document as a tree of objects, allowing developers to interact with and modify the content, structure, and style of web pages using languages like JavaScript.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="faq-question">How do you select an element from DOM?</h2>
+            <p class="faq-answer">To select an element from the DOM in JavaScript, you can use several methods depending on your needs. Here are some of the most commonly used methods:
+            getElementById- Selects an element by its ID.getElementsByClassName-Selects all elements with a specific class name. This returns a live HTMLCollection.getElementById is best for selecting a single element by ID. getElementsByClassName and getElementsByTagName are good for selecting multiple elements but return live collections.
+            querySelector and querySelectorAll offer more flexibility with CSS selectors and are generally recommended for modern JavaScript
+               </p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="faq-question">What is event delegation in the context of DOM, and why it is useful?</h2>
+            <p class="faq-answer">
+                Event delegation is a technique in JavaScript that allows you to manage events for multiple child elements by attaching a single event listener to a parent element. Instead of adding individual event listeners to each child, you handle events at a higher level in the DOM hierarchy.</p>
+        </div>
+            
+        <div class="faq-item">
+            <h2 class="faq-question">How do you manipulate an elements attribute and styles using the dom?</h2>
+            <p class="faq-answer">
+                You can manipulate an element's attributes and styles using the DOM in JavaScript with various methods. Here's how you can do both:
+
+                Manipulating Attributes
+                
+                1. Get an Attribute:
+                   Use `getAttribute()` to retrieve the value of a specific attribute.
+                
+                  
+                
+                2.Set an Attribute:
+                   Use `setAttribute()` to set or change the value of an attribute.
+                
+                
+                3. Remove an Attribute:
+                   Use `removeAttribute()` to remove an attribute from an element.
+        
+                
+               
+                Manipulating Styles
+                
+                1. Get a Style Property:
+                   Access the `style` property directly or use `getComputedStyle()` to retrieve styles.
+                
+                
+                2. set a Style Property Assign a new value to a CSS property via the `style` object.
+                3.Remove a Style Property:
+                Use `style` to set a property to an empty string.
+                
+                  
+                </p>
+        </div>
+
+
+        
+    </div>
+
+
+
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
